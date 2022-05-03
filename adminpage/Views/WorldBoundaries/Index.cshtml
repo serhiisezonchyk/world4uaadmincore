@@ -1,0 +1,92 @@
+﻿@model IEnumerable<adminpage.Models.WorldBoundary>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>MainTable</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+                @Html.DisplayNameFor(model => model.FugitiveStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GeneralInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EntryDoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegDoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transport)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Housing)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nutrition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Charity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddInfo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FugitiveStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GeneralInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EntryDoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegDoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Transport)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Housing)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nutrition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Charity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddInfo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Gid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Gid">Details</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

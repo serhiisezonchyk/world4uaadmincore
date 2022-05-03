@@ -1,0 +1,92 @@
+﻿@model adminpage.Models.WorldBoundary
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>WorldBoundary</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Gid" />
+             <input asp-for="Status" type="hidden" />
+             <input asp-for="ColorCode" type="hidden" />
+             <input asp-for="Region" type="hidden" />
+             <input asp-for="Iso3" type="hidden" />
+             <input asp-for="Continent" type="hidden" />
+             <input asp-for="Iso31661" type="hidden" />
+             <input asp-for="FrenchShor" type="hidden" />
+             <input asp-for="Geom" type="hidden" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FugitiveStatus" class="control-label"></label>
+                <input asp-for="FugitiveStatus" class="form-control" />
+                <span asp-validation-for="FugitiveStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GeneralInfo" class="control-label"></label>
+                <input asp-for="GeneralInfo" class="form-control" />
+                <span asp-validation-for="GeneralInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EntryDoc" class="control-label"></label>
+                <input asp-for="EntryDoc" class="form-control" />
+                <span asp-validation-for="EntryDoc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegDoc" class="control-label"></label>
+                <input asp-for="RegDoc" class="form-control" />
+                <span asp-validation-for="RegDoc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transport" class="control-label"></label>
+                <input asp-for="Transport" class="form-control" />
+                <span asp-validation-for="Transport" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Housing" class="control-label"></label>
+                <input asp-for="Housing" class="form-control" />
+                <span asp-validation-for="Housing" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition" class="control-label"></label>
+                <input asp-for="Nutrition" class="form-control" />
+                <span asp-validation-for="Nutrition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pets" class="control-label"></label>
+                <input asp-for="Pets" class="form-control" />
+                <span asp-validation-for="Pets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Charity" class="control-label"></label>
+                <input asp-for="Charity" class="form-control" />
+                <span asp-validation-for="Charity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AddInfo" class="control-label"></label>
+                <input asp-for="AddInfo" class="form-control" />
+                <span asp-validation-for="AddInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

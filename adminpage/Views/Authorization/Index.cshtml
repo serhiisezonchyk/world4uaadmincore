@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <div class="form-horizontal">
+        <h4>Auth</h4>
+        <hr />
+        <form asp-action="Index">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2" for="host">Host</label><br />
+            <div class="col-md-10">
+                <input type="text" id="host" class="form-control" name="host"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="port">Port</label><br />
+            <div class="col-md-10">
+                <input type="text" id="port" class="form-control" name="port"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="database">Database</label><br />
+            <div class="col-md-10">
+                <input type="text" id="database" class="form-control" name="database"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="user">User</label><br />
+            <div class="col-md-10">
+                <input type="text" id="user" class="form-control" name="user"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="pass">Password</label><br />
+            <div class="col-md-10">
+                <input type="password" id="pass" class="form-control" name="pass"/>
+            </div>
+        </div>
+            <div class="form-group">
+                <input type="submit" value="Auth" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
