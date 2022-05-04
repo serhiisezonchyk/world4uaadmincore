@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xh2bIaNkVAjuIm3lfXbzKcZtcQV73UvSN/6rhZ+Qqolw3Dmdss7cZ+RdTUBQWeEZ5Sby0CPXv2QxIM74Oz5Umg==",
+  "dgSpecHash": "BFAUN/swUGBhV5tnb0DrIleZc8+CsK8SWkwPq1n2iFiPtJf5Zuggz8+/59AbgtskbeucgpKuILW6w29z6IYKXg==",
   "success": true,
   "projectFilePath": "D:\\VSproj\\adminpage\\adminpage\\adminpage.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Сергей\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Сергей\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Сергей\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\Сергей\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.4\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\Сергей\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.4\\microsoft.aspnetcore.mvc.razor.extensions.6.0.4.nupkg.sha512",
     "C:\\Users\\Сергей\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.4\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.4.nupkg.sha512",
     "C:\\Users\\Сергей\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.4\\microsoft.aspnetcore.razor.language.6.0.4.nupkg.sha512",

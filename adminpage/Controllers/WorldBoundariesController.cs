@@ -171,11 +171,11 @@ namespace adminpage.Controllers
 
         public async Task<IActionResult> Logout()
         {
-            GlobalVar.user = null;
-            GlobalVar.database = null;
-            GlobalVar.host = null;
-            GlobalVar.password = null;
-            GlobalVar.port = null;
+            GlobalVar.user = "";
+            GlobalVar.database = "";
+            GlobalVar.host = "";
+            GlobalVar.password = "";
+            GlobalVar.port = "";
             return RedirectToAction("Index", "Authorization");
 
         }

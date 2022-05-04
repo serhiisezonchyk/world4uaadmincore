@@ -567,3 +567,4 @@ D:\VSproj\adminpage\adminpage\bin\Debug\net6.0\refs\WindowsBase.dll
 D:\VSproj\adminpage\adminpage\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\VSproj\adminpage\adminpage\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 D:\VSproj\adminpage\adminpage\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\VSproj\adminpage\adminpage\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll

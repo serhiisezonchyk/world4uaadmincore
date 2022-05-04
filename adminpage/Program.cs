@@ -30,6 +30,8 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseSession();
+app.UseDeveloperExceptionPage();
+app.UseDatabaseErrorPage();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
