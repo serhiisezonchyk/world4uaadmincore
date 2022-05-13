@@ -43,5 +43,7 @@ namespace adminpage.Models
         public string? Pets { get; set; }
         public string? Charity { get; set; }
         public string? AddInfo { get; set; }
+
+        public DateTime? Upddate { get; set; }
     }
 }

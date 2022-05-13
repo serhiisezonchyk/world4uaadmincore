@@ -119,6 +119,9 @@ namespace adminpage.Models
                 entity.Property(e => e.Transport)
                     .HasMaxLength(1000)
                     .HasColumnName("transport");
+
+                entity.Property(e => e.Upddate)
+                 .HasColumnName("upddate");
             });
 
             OnModelCreatingPartial(modelBuilder);

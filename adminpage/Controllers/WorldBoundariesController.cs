@@ -62,7 +62,7 @@ namespace adminpage.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Gid,Status,ColorCode,Region,Iso3,Continent,Name,Iso31661,FrenchShor,Geom,FugitiveStatus,GeneralInfo,EntryDoc,RegDoc,Transport,Housing,Nutrition,Pets,Charity,AddInfo")] WorldBoundary worldBoundary)
+        public async Task<IActionResult> Edit(int id, [Bind("Gid,Status,ColorCode,Region,Iso3,Continent,Name,Iso31661,FrenchShor,Geom,FugitiveStatus,GeneralInfo,EntryDoc,RegDoc,Transport,Housing,Nutrition,Pets,Charity,AddInfo,Upddate")] WorldBoundary worldBoundary)
         {
             if (id != worldBoundary.Gid)
             {
@@ -86,6 +86,7 @@ namespace adminpage.Controllers
                 objFromBase.RegDoc = worldBoundary.RegDoc;
                 objFromBase.Status = worldBoundary.Status;
                 objFromBase.Transport = worldBoundary.Transport;
+                objFromBase.Upddate = worldBoundary.Upddate;
                 try
                 {
                     _context.Update(objFromBase);
