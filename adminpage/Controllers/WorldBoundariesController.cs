@@ -86,7 +86,7 @@ namespace adminpage.Controllers
                 objFromBase.RegDoc = worldBoundary.RegDoc;
                 objFromBase.Status = worldBoundary.Status;
                 objFromBase.Transport = worldBoundary.Transport;
-                objFromBase.Upddate = worldBoundary.Upddate;
+/*                objFromBase.Upddate = worldBoundary.Upddate;*/
                 try
                 {
                     _context.Update(objFromBase);
